@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <h1 className="heading">Covid-19</h1>
-      <hr style={{ height: "3px", background: "#1daa34", border: "none" }}></hr>
+      <hr style={{ height: "2.7px", background: "#1daa34", border: "none" }}></hr>
       <h2 className="desc-heading">A dive into the pandemic and our past.</h2>
     </>
   )
