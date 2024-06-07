@@ -12,7 +12,7 @@ import Quarantine from './sections/Quarantine';
 import Science from './sections/Science';
 import Symptoms from './sections/Symptoms';
 import Treatments from './sections/Treatments';
-import Virus from './sections/Virus';
+import Impacts from './sections/Impacts';
 
 function App() {
 
