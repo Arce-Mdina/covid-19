@@ -13,10 +13,11 @@
   text-align:center;
   font-size:105%;
   color:white;
-  background-color:brown;
+  /* background-color:brown; */
+  background-color: rgb(5, 123, 9);
   /* padding:20px; */
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:7px;
+  padding-bottom:7px;
   width:100vw;
   max-width:100vw;
   left:50%;
