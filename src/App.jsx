@@ -34,6 +34,24 @@ function App() {
 
       <div className="content">
         <About />
+
+        <Science />
+
+        <Symptoms />
+
+        <Treatments />
+
+        <Preventions />
+
+        <Pandemic />
+
+        <Quarantine />
+
+        <Lockdown />
+
+        <Impacts />
+
+        <Cases />
       </div>
     </>
   )
