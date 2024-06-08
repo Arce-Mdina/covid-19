@@ -18,7 +18,7 @@ import Impacts from './sections/Impacts';
 
 import NotFound from './sections/NotFound';
 
-function App() {
+const App = () => {
 
 
   useEffect(() => {
