@@ -20,13 +20,8 @@
       var baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '');
       // Splitting the pathname by '/'
       var pathSegments = l.pathname.split('/');
-      // Checking if the URL has more than one segment in the pathname
-      if (pathSegments.length > 2) {
-        // Replacing the second '/' with '/?/'
-        pathSegments.splice(2, 0, '');
-      }
-      // Reconstructing the URL
-      var newUrl = baseUrl + pathSegments.join('/') + (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash;
+      // Constructing the new URL with a question mark after the second slash
+      var newUrl = baseUrl + '/?' + pathSegments.slice(1).join('/').replace(/&/g, '~and~') + (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash;
       // Redirecting to the new URL
       l.replace(newUrl);
     </script>
