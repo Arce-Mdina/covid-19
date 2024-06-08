@@ -16,6 +16,8 @@ import Symptoms from './sections/Symptoms';
 import Treatments from './sections/Treatments';
 import Impacts from './sections/Impacts';
 
+import NotFound from './sections/NotFound';
+
 function App() {
 
   useEffect(() => {
@@ -48,6 +50,8 @@ function App() {
             <Route path="/lockdown" element={<Lockdown />}/>
             <Route path="/impacts" element={<Impacts />}/>
             <Route path="/stats" element={<Cases />}/>
+
+            <Route element={<NotFound />}/>
           </Routes>
         </BrowserRouter>
       </div>
