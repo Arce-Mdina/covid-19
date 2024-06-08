@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './App.css'
 
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import gsap from 'gsap'
 
@@ -20,7 +20,6 @@ import NotFound from './sections/NotFound';
 
 function App() {
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     gsap.from('.heading', { opacity: 0, duration: 1, y: -100, delay: 1 })
@@ -30,6 +29,13 @@ function App() {
 
   return (
     <>
+      <div className="headings">
+        <div className="header">
+          <h1 className="heading">Covid-19</h1>
+          <hr style={{ height: "2.7px", background: "#1daa34", border: "none" }}></hr>
+          <h2 className="desc-heading">A dive into the pandemic and our past.</h2>
+        </div>
+      </div>
       
 
       <div className="content">
