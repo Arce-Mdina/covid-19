@@ -1,8 +1,11 @@
 import React from 'react'
+import Desc from '../components/Desc'
 
 const Science = () => {
   return (
-    <div>Science</div>
+    <div>
+      <Desc heading="The Science Behind Covid"/>
+    </div>
   )
 }
 

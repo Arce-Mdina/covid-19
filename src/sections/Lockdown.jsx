@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Desc from '../components/Desc'
+
 const Lockdown = () => {
   return (
-    <div>Lockdown</div>
+    <>
+      <Desc heading="Lockdown"/>
+    </>
   )
 }
 

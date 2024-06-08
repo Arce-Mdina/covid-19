@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Desc from '../components/Desc'
+
 const Impacts = () => {
   return (
-    <div>Impacts</div>
+    <>
+      <Desc heading="Impacts of Coronavirus"/>
+    </>
   )
 }
 

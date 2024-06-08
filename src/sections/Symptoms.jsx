@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Desc from '../components/Desc'
+
 const Symptoms = () => {
   return (
-    <div>Symptoms</div>
+    <div>
+      <Desc heading="Covid Symptoms"/>
+    </div>
   )
 }
 

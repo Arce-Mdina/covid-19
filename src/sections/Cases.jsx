@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Desc from '../components/Desc'
+
 const Cases = () => {
   return (
-    <div>Cases</div>
+    <>
+      <Desc heading="Data & Stats"/>
+    </>
   )
 }
 

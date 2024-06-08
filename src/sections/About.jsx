@@ -1,12 +1,12 @@
 import React from 'react'
 
+import Desc from '../components/Desc'
+
 
 const About = () => {
   return (
     <>
-      <div className="desc">
-        <h2 style={{ fontSize: "2.3em" }}>What is Covid-19?</h2>
-      </div>
+      <Desc heading="What is Covid-19?"/>
       <div className="justify">
         <p>Covid-19, also known as the Coronovirus, is a respiratory illness. </p>
       </div>
