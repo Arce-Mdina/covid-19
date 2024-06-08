@@ -15,15 +15,10 @@
       // Note: this 404.html file must be at least 512 bytes for it to work
       // with Internet Explorer (it is currently > 512 bytes)
 
-      var l = window.location;
-      // Extracting the hostname and port
-      var baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '');
-      // Splitting the pathname by '/'
-      var pathSegments = l.pathname.split('/');
-      // Constructing the new URL with a question mark after the second slash
-      var newUrl = baseUrl + '/?' + pathSegments.slice(1).join('/').replace(/&/g, '~and~') + (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash;
-      // Redirecting to the new URL
-      l.replace(newUrl);
+      // Construct the new URL
+      var newUrl = window.location.origin + '/?' + window.location.pathname.slice(1).replace(/\//g, '/?').replace(/&/g, '~and~') + window.location.hash;
+      // Redirect to the new URL
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>
